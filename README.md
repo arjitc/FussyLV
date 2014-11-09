@@ -31,6 +31,7 @@ For example, my LV name is, kvm813_img
     sh remove_lv.sh kvm813_img
 
 Which should get you the following output:
+
     [root@testbox ~]# sh remove_lv.sh kvm813_img
     device-mapper: remove ioctl on vg--vm-kvm813_img failed: Device or resource busy
     Command failed
@@ -47,3 +48,8 @@ Which should get you the following output:
     Logical volume "kvm813_img" successfully removed
     Done
 
+Which can be verified by running the following command:
+
+     lvs | grep LV_NAME_HERE
+
+Which should return no output/blank output.

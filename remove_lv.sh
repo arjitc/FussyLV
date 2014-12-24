@@ -1,4 +1,5 @@
 #!/bin/bash
+# Don't forget to set the VOLUME_GROUP or else it won't work.
 VOLUME_GROUP=""
 LV_NAME=$1
 ONE="1"
